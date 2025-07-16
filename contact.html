@@ -2,28 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact Us – Fashionly</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashionly | Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Fashionly</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
+      <a href="collections.html">Shop</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="cart">🛒</div>
   </header>
 
-  <section class="contact">
-    <h2>Reach out to us</h2>
-    <p>Email: hello@fashionly.com</p>
-    <p>Instagram: @fashionly.shop</p>
+  <!-- Contact Header -->
+  <section class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align: center; max-width: 600px; margin: auto; color: #555;">
+      Got questions, suggestions, or feedback? We'd love to hear from you!
+    </p>
   </section>
 
-  <footer>
-    <p>© 2025 Fashionly</p>
+  <!-- Contact Form -->
+  <section class="section">
+    <div style="max-width: 600px; margin: auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 12px rgba(0,0,0,0.05);">
+      <form>
+        <div style="margin-bottom: 1rem;">
+          <label for="name" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+          <input type="text" id="name" placeholder="Your Name" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px;" required />
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="email" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px;" required />
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="message" style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+          <textarea id="message" rows="5" placeholder="Your message..." style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px;" required></textarea>
+        </div>
+        <button class="btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fashionly. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
