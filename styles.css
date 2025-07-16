@@ -1,36 +1,129 @@
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
 }
-header, footer {
-  background: #111;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-nav a {
-  margin: 0 10px;
-  color: white;
+
+a {
   text-decoration: none;
+  color: inherit;
 }
-.hero {
-  background: #e89e9e;
-  color: white;
-  text-align: center;
-  padding: 4em 1em;
-}
-.product-grid {
+
+.navbar {
+  background: white;
+  padding: 1rem 2rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-.product-card {
-  border: 1px solid #ddd;
-  padding: 1em;
-  width: 200px;
+
+.navbar nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #008060;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #008060;
+}
+
+.cart {
+  font-size: 1.3rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background: #fff;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #008060;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.btn-primary {
+  background: #008060;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #006d52;
+}
+
+.section {
+  padding: 2rem;
+}
+
+.section-title {
   text-align: center;
-  background: #fefefe;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  color: #888;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
