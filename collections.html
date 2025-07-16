@@ -2,27 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Collections – Fashionly</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashionly | Collections</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Our Collections</h1>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Fashionly</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
+      <a href="collections.html">Shop</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="cart">🛒</div>
   </header>
 
-  <section class="collections">
-    <h2>Summer Wear</h2>
-    <p>Cool and vibrant clothes perfect for the season.</p>
+  <!-- Collections Header -->
+  <section class="section">
+    <h2 class="section-title">All Collections</h2>
+    <p style="text-align: center; max-width: 600px; margin: auto; color: #555;">
+      Explore our stylish collections curated just for you — from comfy casuals to elegant formals and everything in between.
+    </p>
   </section>
 
-  <footer>
-    <p>© 2025 Fashionly</p>
+  <!-- Product Grid -->
+  <section class="section">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?tshirt" alt="T-Shirt" />
+        <h3>Graphic Tee</h3>
+        <p>₹799</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?hoodie" alt="Hoodie" />
+        <h3>Warm Hoodie</h3>
+        <p>₹1399</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?pants" alt="Pants" />
+        <h3>Slim Fit Pants</h3>
+        <p>₹1199</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?kurta" alt="Kurta" />
+        <h3>Festive Kurta</h3>
+        <p>₹999</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?saree" alt="Saree" />
+        <h3>Elegant Saree</h3>
+        <p>₹2499</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x300/?dress" alt="Dress" />
+        <h3>Floral Dress</h3>
+        <p>₹1799</p>
+        <button class="btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fashionly. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
